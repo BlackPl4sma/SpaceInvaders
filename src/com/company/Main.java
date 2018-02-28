@@ -8,14 +8,18 @@ public class Main implements Commons{
     public static void main(String[] args) {
         JFrame frame = new JFrame("SpaceInvaders");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Container contentPane = frame.getContentPane();
+        JPanel menuPanel = new JPanel();
 
-        //Schließen Button
-        JButton closeButton = new JButton("Hallo Phillip!");
-        contentPane.add(closeButton);
-
+        //Spielen Button
+        JButton playButton = new JButton("Spielen");
+        menuPanel.add(playButton);
+        frame.add(menuPanel);
         //Größe setzen
         frame.setBounds(100, 100, BOARD_WIDTH, BOARD_HEIGHT);
         frame.setVisible(true);
+        //Hintergrund
+
+        
+
     }
 }
