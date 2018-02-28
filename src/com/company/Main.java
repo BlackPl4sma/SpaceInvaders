@@ -11,9 +11,9 @@ public class Main {
         Container contentPane = frame.getContentPane();
 
         //Schließen Button
-        JButton closeButton = new JButton("Test");
+        JButton closeButton = new JButton("Hallo Phillip!");
         contentPane.add(closeButton);
-
+//Wir lieben unseren Phillip <3!
         //Größe setzen
         frame.setBounds(50, 50, 300, 200);
         frame.setVisible(true);
