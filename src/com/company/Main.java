@@ -3,7 +3,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main {
+public class Main implements Commons{
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("SpaceInvaders");
@@ -13,9 +13,9 @@ public class Main {
         //Schließen Button
         JButton closeButton = new JButton("Hallo Phillip!");
         contentPane.add(closeButton);
-//Wir lieben unseren Phillip <3!
+
         //Größe setzen
-        frame.setBounds(50, 50, 300, 200);
+        frame.setBounds(100, 100, BOARD_WIDTH, BOARD_HEIGHT);
         frame.setVisible(true);
     }
 }
