@@ -7,18 +7,19 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 
-public class Main implements Commons{
+public class Main {
 
 
 
     public static void main(String[] args) throws IOException {
-        JFrame frame = new JFrame("SpaceInvaders");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame SpielFenster = new JFrame("SpaceInvaders - Work in Progress - 0.0.1");
+        SpielFenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //JFrame
-        frame.setBounds(100, 100, BOARD_WIDTH, BOARD_HEIGHT);
-        frame.setVisible(true);
-        frame.getBackground();
+        SpielFenster.setBounds(0, 0, 800, 600);
+        SpielFenster.setVisible(true);
+        SpielFenster.getBackground();
+        SpielFenster.setResizable(false);
 
         //Menu Panel
         JPanel menuPanel = new JPanel();
@@ -26,7 +27,7 @@ public class Main implements Commons{
         menuPanel.add(playButton);
 
         //Menü Panel hinzufügen
-        frame.add(menuPanel);
+        SpielFenster.add(menuPanel);
 
 
 
